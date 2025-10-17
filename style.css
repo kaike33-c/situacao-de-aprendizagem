@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: midnightblue;
+    box-shadow: 0 0.1rem 1rem midnightblue;
+    padding: 0.5rem 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav a img {
+    height: calc(100% - 0.5rem); 
+    max-height: 2rem;
+    width: auto;
+}
