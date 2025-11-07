@@ -11,15 +11,45 @@
 <body>
     <header>
         <nav>
-            <a href="./index.html"><img src="./imagens/botao_home.png" alt=""></a>
-            <a href="./paginas/fundamentoeletroeletronica.html">Fundamentos da Eletroeletrônica</a>
-            <a href="./paginas/fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</a>
-            <a href="./paginas/fundamentobancodados.html">Fundamentos de Banco de Dados</a>
-            <a href="./paginas/fundamentoredes.html">Fundamentos de Redes</a>
-            <a href="./paginas/logicacomputacional.html">Lógica Computacional</a>
-            <a href="./paginas/logicaprogramacao.html">Lógica de Programação</a>
+            <a href="./index.html"><img src="./imagens/botao-home.png" alt=""></a>
         </nav>
+        <select onchange="window.location.href=this.value">
+            <option value="">Selecione uma categoria</option>
+            <option value="./paginas/fundamentoeletroeletronica.html">Fundamentos da Eletroeletrônica</option>
+            <option value="./paginas/fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
+            <option value="./paginas/fundamentobancodados.html">Fundamentos de Banco de Dados</option>
+            <option value="./paginas/fundamentoredes.html">Fundamentos de Redes</option>
+            <option value="./paginas/logicacomputacional.html">Lógica Computacional</option>
+            <option value="./paginas/logicaprogramacao.html">Lógica de Programação</option>
+        </select>
     </header>
+
+    <main>
+        <div id="home">
+            <div>
+                <h1 class="texto-colorido grande">Kaike Cleve</h1>
+                <h2 class="sombra">Desenvolvimento Web - Criação de Sites (Frontend)</h2>
+            </div>
+        </div>
+
+        <div id="projetos">
+            <h1 class="texto-colorido grande">Meus Projetos</h1>
+            <div class="cards">
+                <iframe src="https://montesquieu-peach.vercel.app/" frameborder="0"></iframe>
+                <iframe src="https://ronaldo-coral.vercel.app/" frameborder="0"></iframe> <!-- MUDAR ISSO LOGO -->
+            </div>
+        </div>
+
+        <div id="contato">
+            <div class="borda">
+                <div>
+                    <h1 class="texto-colorido">Fale Comigo!</h1>
+                    <h2>Tire seu projeto do papel.</h2>
+                </div>
+                <nav><a href="mailto:kaike_cleve@estudante.sesisenai.org.br"><img src="./imagens/botao-email.png" alt="">&nbsp;Fale comigo por E-Mail</a></nav>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
