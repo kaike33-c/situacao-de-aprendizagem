@@ -4,25 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Situação de Aprendizagem</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../imagens/botao-home.png" alt=""></a>
+            <a href="../index.html"><img src="../imagens/casa_home.png" alt="Home"></a>
         </nav>
         <select onchange="window.location.href=this.value">
             <option value="">Selecione uma categoria</option>
             <option value="./fundamentoeletroeletronica.html">Fundamentos da Eletroeletrônica</option>
-            <option value="./fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
+            <option value="./logicacomputacional.html">Lógica Computacional</option>
             <option value="./fundamentobancodados.html">Fundamentos de Banco de Dados</option>
             <option value="./fundamentoredes.html">Fundamentos de Redes</option>
-            <option value="./logicacomputacional.html">Lógica Computacional</option>
             <option value="./logicaprogramacao.html">Lógica de Programação</option>
+            <option value="./fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
         </select>
     </header>
+
+    <main>
+        <div class="inicio">
+            <h1 class="texto-colorido grande">Lógica de Programação</h1>
+        </div>
+
+        <div class="texto-unico">
+            <h1>O que são Linguagens de Programação? Fale sobre as seguintes linguagens: C++, Javascript, Java, Python, PHP.</h1>
+            <p>Linguagens permitem escrever programas. C++: Orientada a objetos, eficiente. JavaScript: Para web, interpretada. Java: Plataforma independente. Python: Simples, versátil. PHP: Para web backend.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é uma linguagem de programação interpretada? e uma linguagem de programação compilada?</h2>
+            <p>Interpretada: Executada linha por linha (ex: Python). Compilada: Convertida em código máquina antes (ex: C++).</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é HTML e CSS</h2>
+            <p>HTML estrutura páginas web. CSS estiliza.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é uma IDE (ambiente de desenvolvimento de sistemas - exemplos: VSCode, IntelliJ, …)</h2>
+            <p>IDE facilita escrever código com editor, depurador, etc. Exemplos: VSCode, IntelliJ.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Gere um script para ordenar números de de 1 a 20, em ordem crescente e decrescente</h2>
+            <p><button onclick="ordenarCrescente()">Ordenar Crescente</button> <button onclick="ordenarDecrescente()">Ordenar Decrescente</button></p>
+            <div id="resultadoOrdenacao"></div>
+            <script src="../JS/ordenacao.js"></script>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Gerem um script para ordenar 10 números aleatórios de 1 a 20 (com bubleSort).</h2>
+            <p><button onclick="bubbleSortAleatorios()">Bubble Sort Aleatórios</button></p>
+            <div id="resultadoBubble"></div>
+            <script src="../JS/bubbleSort.js"></script>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Apresente um script para somar 10 números aleatórios de 1 a 220 em um array.</h2>
+            <p><button onclick="somarAleatorios()">Somar Aleatórios</button></p>
+            <div id="resultadoSoma"></div>
+            <script src="../JS/somaArray.js"></script>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Apresente um script para gerar uma matriz 3 x 3 de números aleatórios de 1 a 20.</h2>
+            <p><button onclick="gerarMatriz()">Gerar Matriz</button></p>
+            <div id="resultadoMatriz"></div>
+            <script src="../JS/matriz.js"></script>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Apresente um script para calcular o IMC de uma pessoa.</h2>
+            <p><input type="number" id="peso" placeholder="Peso (kg)"> <input type="number" id="altura" placeholder="Altura (m)"> <button onclick="calcularIMC()">Calcular IMC</button></p>
+            <div id="resultadoIMC"></div>
+            <script src="../JS/imc.js"></script>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Apresente um Script para converter a temperatura em °F, °C.</h2>
+            <p><input type="number" id="temp" placeholder="Temperatura"> <select id="unidade"><option value="C">Celsius</option><option value="F">Fahrenheit</option></select> <button onclick="converterTemp()">Converter</button></p>
+            <div id="resultadoTemp"></div>
+            <script src="../JS/temperatura.js"></script>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Apresente um script de busca linear (explique em 1 ou 2 parágrafos).</h2>
+            <p>Busca linear verifica cada elemento sequencialmente até encontrar o alvo. É simples mas ineficiente para listas grandes, com complexidade O(n). Primeiro, gere um array aleatório e depois procure um valor específico.</p>
+            <button onclick="gerarArray()">Gerar Array</button>
+            <div id="arrayDisplay"></div>
+            <input type="number" id="alvoBusca" placeholder="Digite o valor para procurar">
+            <button onclick="buscaLinear()">Procurar no Array</button>
+            <div id="resultadoBusca"></div>
+            <script src="../JS/buscaLinear.js"></script>
+        </div>
+
+
+
+    </main>
 </body>
 
 </html>

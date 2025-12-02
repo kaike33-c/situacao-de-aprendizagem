@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Situação de Aprendizagem</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../imagens/botao-home.png" alt=""></a>
+            <a href="../index.html"><img src="../imagens/casa_home.png" alt="Home"></a>
         </nav>
         <select onchange="window.location.href=this.value">
             <option value="">Selecione uma categoria</option>
@@ -23,6 +23,95 @@
             <option value="./logicaprogramacao.html">Lógica de Programação</option>
         </select>
     </header>
+
+    <main>
+        <div class="inicio">
+                <h1 class="texto-colorido grande">Tecnologia da Informação</h1>
+        </div>
+        
+        <div class="texto-unico">
+            <h1>O que é o Hardware de computadores?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum assumenda ex fuga laborum quasi, necessitatibus, inventore id perspiciatis ad at velit voluptas tempore quisquam odit! Nam numquam itaque obcaecati!</p>
+        </div>
+
+        <div class="texto-unico">
+        <h2>Principais componentes de hardware</h2>
+        <p>Resumo dos componentes fundamentais encontrados em um computador pessoal e suas funções principais.</p>
+        </div>
+        <div class="grade">
+            <div class="item-grade">
+                <div>
+                    <h3>Placa-mãe</h3>
+                    <p>A placa-mãe é a plataforma que interliga todos os componentes (CPU, memória, armazenamento, placas de expansão) e fornece soquetes, barramentos e circuitos de alimentação.</p>
+                </div>
+                <img src="../imagens/placa_mae.jpg" alt="Placa Mãe">
+            </div>
+
+            <div class="item-grade">
+                <div>
+                    <h3>Processador (CPU)</h3>
+                    <p>CPU (Central Processing Unit) é o 'cérebro' do computador: executa instruções, cálculos e controla o fluxo de dados entre os dispositivos.</p>
+                </div>
+                <img src="../imagens/cpu.jpg" alt="CPU (Processador)">
+            </div>
+
+            <div class="item-grade">
+                <div>
+                    <h3>Memória principal (RAM)</h3>
+                    <p>A RAM (Random Access Memory) armazena temporariamente dados e instruções em uso pelo processador, permitindo acesso rápido. É volátil (perde conteúdo sem energia).</p>
+                </div>
+                <img src="../imagens/ram.jpg" alt="Memória RAM">
+            </div>
+
+            <div class="item-grade">
+                <div>
+                    <h3>Armazenamento (HDD / SSD)</h3>
+                    <p>Discos rígidos (HDD) e unidades de estado sólido (SSD) armazenam dados de forma persistente — sistema operacional, programas e arquivos do usuário.</p>
+                </div>
+                <img src="../imagens/hd.jpg" alt="Ícone armazenamento">
+            </div>
+        </div>
+
+        <div class="texto-unico">
+            <h1>O que é um Sistema Operacional?</h1>
+            <p>Um sistema operacional é um software que gerencia os recursos de hardware e software de um computador, fornecendo uma interface entre o usuário e o hardware. Ele controla a execução de programas, gerencia memória, processa entrada e saída, e coordena dispositivos.</p>
+            <p>Exemplos de sistemas operacionais:</p>
+            <ul>
+                <li>Windows</li>
+                <li>macOS</li>
+                <li>Linux</li>
+                <li>Android</li>
+            </ul>
+        </div>
+
+        <div class="texto-unico">
+            <h1>O que é o Sistema de Arquivos?</h1>
+            <p>O sistema de arquivos é uma estrutura que organiza e armazena dados em dispositivos de armazenamento, permitindo a criação, leitura, atualização e exclusão de arquivos e diretórios.</p>
+            <p>Como funciona em modo texto (cmd): No prompt de comando, comandos como dir, cd, mkdir são usados para navegar e gerenciar arquivos.</p>
+            <p>Como funciona em modo gráfico (explorer): No Explorador de Arquivos, você clica em ícones para abrir pastas, copiar arquivos, etc.</p>
+        </div>
+
+        <div class="texto-unico" style="margin-bottom: 1rem !important;">
+            <h1>O que é Software de Escritório?</h1>
+            <p>Software de escritório são programas utilizados para tarefas administrativas, como processamento de texto, planilhas, apresentações e gerenciamento de e-mails.</p>
+        </div>
+
+        <div class="grade" style="margin-top: 0 !important;">
+            <div class="item-grade">
+                <h3>Microsoft Word</h3>
+                <p>Aplicação: Processamento de texto para criar e editar documentos.</p>
+            </div>
+            <div class="item-grade">
+                <h3>Microsoft Excel</h3>
+                <p>Aplicação: Planilhas para cálculos, análise de dados e gráficos.</p>
+            </div>
+            <div class="item-grade">
+                <h3>Microsoft PowerPoint</h3>
+                <p>Aplicação: Criação de apresentações visuais com slides.</p>
+            </div>
+        </div>
+
+    </main>
 </body>
 
 </html>

@@ -4,25 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Situação de Aprendizagem</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../imagens/botao-home.png" alt=""></a>
+            <a href="../index.html"><img src="../imagens/casa_home.png" alt="Home"></a>
         </nav>
         <select onchange="window.location.href=this.value">
             <option value="">Selecione uma categoria</option>
             <option value="./fundamentoeletroeletronica.html">Fundamentos da Eletroeletrônica</option>
-            <option value="./fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
+            <option value="./logicacomputacional.html">Lógica Computacional</option>
             <option value="./fundamentobancodados.html">Fundamentos de Banco de Dados</option>
             <option value="./fundamentoredes.html">Fundamentos de Redes</option>
-            <option value="./logicacomputacional.html">Lógica Computacional</option>
             <option value="./logicaprogramacao.html">Lógica de Programação</option>
+            <option value="./fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
         </select>
     </header>
+
+    <main>
+        <div class="inicio">
+            <h1 class="texto-colorido grande">Fundamentos de Banco de Dados</h1>
+        </div>
+
+        <div class="texto-unico">
+            <h1>O que é um SGBD? Tipos e Aplicações?</h1>
+            <p>SGBD (Sistema de Gerenciamento de Banco de Dados) gerencia dados. Tipos: Relacional (MySQL), NoSQL (MongoDB). Aplicações: E-commerce, bancos, etc.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Quais os principais bancos de dados?</h2>
+            <p>MySQL, PostgreSQL, Oracle, SQL Server, MongoDB.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é um dicionário de dados? Quais os tipos de dados de um banco de dados?</h2>
+            <p>Dicionário descreve estrutura. Tipos: Inteiro, varchar, date, etc.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é uma modelagem de banco de dados? E o modelo DER? MER?</h2>
+            <p>Modelagem define estrutura. DER: Diagrama Entidade-Relacionamento. MER: Modelo Entidade-Relacionamento.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Explique um exemplo de um diagrama DER (foto)?</h2>
+            <p>DER mostra entidades e relacionamentos. Ex: Cliente &rarr; Compra &rarr; Produto.</p>
+            <img src="../imagens/der.png" alt="Exemplo DER" width="100%">
+        </div>
+
+        <div class="texto-unico">
+            <h2>Explique um exemplo de um diagrama MER (foto)?</h2>
+            <p>O conceito do DER (uma lista de entidades, relacionamentos e atributos) antes de ser criado o diagrama para visualização.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Simulação de Cadastro de Dados em Banco de Dados</h2>
+            <form id="cadastroForm">
+                <label>Nome: <input type="text" id="nome"></label><br>
+                <label>Email: <input type="email" id="email"></label><br>
+                <button type="button" onclick="gravarDados()">Gravar Dados</button>
+            </form>
+            <div id="resultadoCadastro"></div>
+            <script src="../JS/cadastro.js"></script>
+        </div>
+
+    </main>
 </body>
 
 </html>

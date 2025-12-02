@@ -4,25 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Situação de Aprendizagem</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../imagens/botao-home.png" alt=""></a>
+            <a href="../index.html"><img src="../imagens/casa_home.png" alt="Home"></a>
         </nav>
         <select onchange="window.location.href=this.value">
             <option value="">Selecione uma categoria</option>
             <option value="./fundamentoeletroeletronica.html">Fundamentos da Eletroeletrônica</option>
-            <option value="./fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
+            <option value="./logicacomputacional.html">Lógica Computacional</option>
             <option value="./fundamentobancodados.html">Fundamentos de Banco de Dados</option>
             <option value="./fundamentoredes.html">Fundamentos de Redes</option>
-            <option value="./logicacomputacional.html">Lógica Computacional</option>
             <option value="./logicaprogramacao.html">Lógica de Programação</option>
+            <option value="./fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
         </select>
     </header>
+
+    <main>
+        <div class="inicio">
+            <h1 class="texto-colorido grande">Fundamentos da Eletroeletrônica</h1>
+        </div>
+
+        <div class="texto-unico">
+            <h1>Introdução aos Fundamentos de Eletroeletrônica</h1>
+            <p>A eletroeletrônica é a área que combina princípios da eletricidade e da eletrônica para o desenvolvimento de sistemas e dispositivos. Abaixo, uma lista de tópicos fundamentais:</p>
+            <ol>
+                <li>Conceitos básicos de eletricidade e circuitos.</li>
+                <li>Leis fundamentais: Lei de Ohm, Lei de Kirchhoff.</li>
+                <li>Componentes passivos: resistores, capacitores, indutores.</li>
+                <li>Componentes ativos: diodos, transistores, circuitos integrados.</li>
+                <li>Análise de circuitos elétricos.</li>
+                <li>Fontes de alimentação e reguladores de tensão.</li>
+                <li>Instrumentos de medição: multímetros, osciloscópios.</li>
+                <li>Segurança elétrica e normas.</li>
+                <li>Introdução à eletrônica digital.</li>
+                <li>Prototipagem com placas de desenvolvimento.</li>
+                <li>Aplicações práticas em sistemas automatizados.</li>
+            </ol>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Componentes Eletrônicos empregados em serviços</h2>
+            <p>Resistor: Componente que limita a corrente elétrica. Diodo LED: Emite luz quando polarizado corretamente. Transistor: Amplifica sinais ou funciona como chave. Circuito Integrado: Conjunto de componentes miniaturizados em um chip.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Sensores Empregados em Sistemas Automatizados</h2>
+            <p>Sensor de temperatura: Mede variações térmicas. Sensor de umidade: Detecta níveis de umidade no ar. Sensor de luminosidade: Avalia intensidade de luz. Outros incluem sensores de movimento, pressão, etc.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Arduino: O que é, Para que serve / aplicações, vantagens e desvantagens</h2>
+            <p>Arduino é uma plataforma de prototipagem eletrônica open-source. Serve para criar projetos interativos, como robôs, sensores e automação. Aplicações incluem IoT, controle de motores e monitoramento ambiental. Vantagens: Fácil de usar, comunidade ativa, custo baixo. Desvantagens: Limitações de processamento para tarefas complexas.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Como o Arduino funciona? O que é eletrônica embarcada?</h2>
+            <p>O Arduino funciona conectando componentes a pinos digitais e analógicos, programados via IDE. Eletrônica embarcada integra hardware e software em dispositivos dedicados, como em carros ou aparelhos médicos.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Arduino: qual a linguagem de programação usada</h2>
+            <p>A linguagem usada é baseada em C/C++, com uma sintaxe simplificada para facilitar o desenvolvimento.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que são entradas e saídas digitais em circuitos integrados como o Arduino</h2>
+            <p>Entradas digitais leem sinais binários (0 ou 1). Saídas digitais enviam sinais binários para controlar dispositivos como LEDs ou relés.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que são entradas e saídas analógicas em circuitos integrados como o Arduino</h2>
+            <p>Entradas analógicas leem valores contínuos (0-1023). Saídas analógicas simulam sinais contínuos via PWM para controlar intensidade de luz ou velocidade de motores.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Calculadora da Lei de Ohm: Tensão, Corrente e Resistência</h2>
+            <p>Insira dois valores para calcular o terceiro usando V = I * R.</p>
+            <label>Voltagem (V): <input type="number" id="voltagem"></label><br>
+            <label>Corrente (A): <input type="number" id="corrente"></label><br>
+            <label>Resistência (Ω): <input type="number" id="resistencia"></label><br>
+            <button onclick="calcularOhm()">Calcular</button>
+            <div id="resultadoOhm"></div>
+            <script src="../JS/ohm.js"></script>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Calculadora de Potência Elétrica</h2>
+            <p>Potência = tensão * corrente; ou Potência = corrente² * resistência; ou Potência = tensão² / resistência.</p>
+            <label>Voltagem (V): <input type="number" id="potVoltagem"></label><br>
+            <label>Corrente (A): <input type="number" id="potCorrente"></label><br>
+            <label>Resistência (Ω): <input type="number" id="potResistencia"></label><br>
+            <button onclick="calcularPotencia()">Calcular Potência</button>
+            <div id="resultadoPotencia"></div>
+            <script src="../JS/potencia.js"></script>
+        </div>
+
+        <div>
+            <h1>Led Controlado por Arduino e req/res</h1>
+            <video src="../videos/ledvsc.mp4" controls></video>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Apresente um programa para leitura de dados de um sensor analógico, acionando saídas digitais</h2>
+            <p>Exemplo em Arduino:</p>
+            <code><pre>
+int sensor = analogRead(A0);
+if(sensor > 500) {
+    digitalWrite(13, HIGH);
+} else {
+    digitalWrite(13, LOW);
+}
+            </pre></code>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é um diodo? e Um Diodo LED? e um display 7 segmentos?</h2>
+            <p>Diodo: Componente que permite corrente em uma direção. Diodo LED: Emite luz quando energizado. Display 7 segmentos: Mostra dígitos usando 7 LEDs em forma de segmentos.</p>
+        </div>
+
+    </main>
 </body>
 
 </html>

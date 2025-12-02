@@ -4,25 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Situação de Aprendizagem</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../imagens/botao-home.png" alt=""></a>
+            <a href="../index.html"><img src="../imagens/casa_home.png" alt="Home"></a>
         </nav>
         <select onchange="window.location.href=this.value">
             <option value="">Selecione uma categoria</option>
             <option value="./fundamentoeletroeletronica.html">Fundamentos da Eletroeletrônica</option>
-            <option value="./fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
+            <option value="./logicacomputacional.html">Lógica Computacional</option>
             <option value="./fundamentobancodados.html">Fundamentos de Banco de Dados</option>
             <option value="./fundamentoredes.html">Fundamentos de Redes</option>
-            <option value="./logicacomputacional.html">Lógica Computacional</option>
             <option value="./logicaprogramacao.html">Lógica de Programação</option>
+            <option value="./fundamentotecnologiainformacao.html">Fundamentos de Tecnologia da Informação</option>
         </select>
     </header>
+
+    <main>
+        <div class="inicio">
+            <h1 class="texto-colorido grande">Fundamentos de Redes</h1>
+        </div>
+
+        <div class="texto-unico">
+            <h1>O que são Redes de Computadores?</h1>
+            <p>Redes conectam dispositivos para compartilhar recursos e informações.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é uma Rede mínima?</h2>
+            <p>Dois dispositivos conectados diretamente.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é a internet? O que compõe?</h2>
+            <p>Rede global de redes. Compõe: Servidores, roteadores, cabos, protocolos.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é web?</h2>
+            <p>Sistema de documentos interligados via HTTP.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é o mapa de fibra óptica. Mostre o mapa global de fibra óptica da internet.</h2>
+            <p>Mapa mostra cabos submarinos de fibra óptica conectando continentes.</p>
+            <img src="../imagens/fibra_mapa.png" alt="Mapa global de fibra óptica" width="100%">
+        </div>
+
+        <div class="texto-unico">
+            <h2>Quais os componentes de hardware de uma rede wi-fi?</h2>
+            <p>Roteador, antenas, dispositivos sem fio.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Quais os componentes de hardware de uma rede local com cabo de rede?</h2>
+            <p>Switches, cabos Ethernet, NICs.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é um protocolo de comunicação?</h2>
+            <p>Regras para transmissão de dados.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é o modelo OSI?</h2>
+            <p>Modelo de 7 camadas para redes.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>E o modelo TCP/IP?</h2>
+            <p>Modelo de 4 camadas usado na internet.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é o protocolo IP V4 ? e o IP V6?</h2>
+            <p>IPv4: 32 bits. IPv6: 128 bits, mais endereços.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Como é configurado o IP e o TCP em uma programação backend com node.js?</h2>
+            <p>Usando módulos como 'net' ou 'http'. Exemplo:</p>
+            <code><pre>
+const net = require('net');
+const server = net.createServer((socket) => {
+    socket.write('Hello from TCP server!');
+    socket.end();
+});
+server.listen(8080);
+            </pre></code>
+        </div>
+
+        <div class="texto-unico">
+            <h2>O que é o protocolo HTTP?</h2>
+            <p>Protocolo para web, transfere hipertexto.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>E o HTTPS ?</h2>
+            <p>HTTP seguro com criptografia SSL/TLS.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Cite exemplo de um framework para programação do protocolo HTTP com uso do node.js?</h2>
+            <p>Express.js.</p>
+        </div>
+
+        <div class="texto-unico">
+            <h2>Apresente 3 exemplos de código Backend para troca de mensagens entre front e backend.</h2>
+            <p>1. GET request:</p>
+            <code><pre>
+app.get('/api', (req, res) => res.send('Hello'));
+            </pre></code>
+            <p>2. POST request:</p>
+            <code><pre>
+app.post('/data', (req, res) => res.json(req.body));
+            </pre></code>
+            <p>3. WebSocket para mensagens em tempo real:</p>
+            <code><pre>
+const WebSocket = require('ws');
+const wss = new WebSocket.Server({ port: 8080 });
+wss.on('connection', (ws) => {
+    ws.on('message', (message) => {
+        ws.send('Received: ' + message);
+    });
+});
+            </pre></code>
+        </div>
+
+    </main>
 </body>
 
 </html>
